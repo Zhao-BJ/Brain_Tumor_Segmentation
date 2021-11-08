@@ -22,15 +22,15 @@ def get_arguments():
     parser.add_argument('--batch_size', default=1)
 
     # Data settings
-    parser.add_argument('--data_path', default='/data2/aiteam_cta/ZhaoBJ/Datasets/Brain_Tumor/BraTS2018/process_spacing1_crop_112_160_112/norm_npy/train')
-    parser.add_argument('--org_nii_path', default='/data2/aiteam_cta/ZhaoBJ/Datasets/Brain_Tumor/BraTS2018/process_spacing1_crop_112_160_112/resampled_nii/train')
-    parser.add_argument('--save_path', default='/data2/aiteam_cta/ZhaoBJ/Projects/Brain_Tumor_Segmentation/demos/BraTS2018_Cropped_by_SegNet3D_Cross_Validation/results/SegNet3D/weights_1000/BraTS2018_Train')
+    parser.add_argument('--data_path', default='~/Datasets/Brain_Tumor/BraTS2018/process_spacing1_crop_112_160_112/norm_npy/train')
+    parser.add_argument('--org_nii_path', default='~/Datasets/Brain_Tumor/BraTS2018/process_spacing1_crop_112_160_112/resampled_nii/train')
+    parser.add_argument('--save_path', default='~/Projects/Brain_Tumor_Segmentation/demos/BraTS2018_Cropped_by_SegNet3D_Cross_Validation/results/SegNet3D/weights_1000/BraTS2018_Train')
 
     # Model settings
     parser.add_argument('--inplanes', default=4, help='Four modality data input stack')
     parser.add_argument('--planes', default=64)
     parser.add_argument('--num_classes', default=3)
-    parser.add_argument('--resume', default='/data2/aiteam_cta/ZhaoBJ/Projects/Brain_Tumor_Segmentation/demos/BraTS2018_Cropped_by_SegNet3D_Cross_Validation/results/SegNet3D/weights_1000.pth')
+    parser.add_argument('--resume', default='~/Projects/Brain_Tumor_Segmentation/demos/BraTS2018_Cropped_by_SegNet3D_Cross_Validation/results/SegNet3D/weights_1000.pth')
 
     args = parser.parse_args()
     return args
