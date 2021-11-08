@@ -20,5 +20,5 @@
 
 第二阶段的肿瘤子区域分割代码位于[demos/BraTS2018_Cropped_by_SegNet3D_Cross_Validation](https://github.com/Zhao-BJ/Brain_Tumor_Segmentation/blob/main/demos/BraTS2018_Cropped_by_SegNet3D_Cross_Validation)包内，我们使用整个训练集或5-折交叉验证进行训练，然后在竞赛系统计算训练集和验证集的评价指标。第二阶段的训练代码为[SegNet3D.py](https://github.com/Zhao-BJ/Brain_Tumor_Segmentation/blob/main/demos/BraTS2018_Cropped_by_SegNet3D_Cross_Validation/SegNet3D.py)。计算并生成最终结果的脚本为[SegNet3D_for_BraTS2018_Validation_Submission.py](https://github.com/Zhao-BJ/Brain_Tumor_Segmentation/blob/main/demos/BraTS2018_Cropped_by_SegNet3D_Cross_Validation/SegNet3D_for_BraTS2018_Validation_Submission.py)。
 
-竞赛提交系统地址为：https://ipp.cbica.upenn.edu/categories/brats2018。其中，本实验最终获得的训练集结果为：ET Dice = 0.92949, WT Dice = 0.99216, TC Dice = 0.99038。验证集结果为：ET Dice = 0.57008, WT Dice = 0.78826, TC Dice = 0.66277。可以看出目前严重过拟合了。
+竞赛提交系统地址为：[https://ipp.cbica.upenn.edu/categories/brats2018](https://ipp.cbica.upenn.edu/categories/brats2018)。其中，本实验最终获得的训练集结果为：ET Dice = 0.92949, WT Dice = 0.99216, TC Dice = 0.99038。验证集结果为：ET Dice = 0.57008, WT Dice = 0.78826, TC Dice = 0.66277。可以看出目前严重过拟合了。
 
