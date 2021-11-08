@@ -25,17 +25,17 @@ def get_arguments():
     parser.add_argument('--roi_size', default=(112, 160, 112))
 
     # Data settings
-    parser.add_argument('--data_path', default='/data2/aiteam_cta/ZhaoBJ/Datasets/Brain_Tumor/BraTS2018/process_spacing1/norm_npy/valid')
-    parser.add_argument('--org_npy_path', default='/data2/aiteam_cta/ZhaoBJ/Datasets/Brain_Tumor/BraTS2018/process_spacing1/norm_npy/valid')
-    parser.add_argument('--org_nii_path', default='/data2/aiteam_cta/ZhaoBJ/Datasets/Brain_Tumor/BraTS2018/process_spacing1/resampled_nii/valid')
-    parser.add_argument('--save_npy_path', default='/data2/aiteam_cta/ZhaoBJ/Datasets/Brain_Tumor/BraTS2018/process_spacing1_crop_112_160_112/norm_npy/valid')
-    parser.add_argument('--save_nii_path', default='/data2/aiteam_cta/ZhaoBJ/Datasets/Brain_Tumor/BraTS2018/process_spacing1_crop_112_160_112/resampled_nii/valid')
+    parser.add_argument('--data_path', default='~/Datasets/Brain_Tumor/BraTS2018/process_spacing1/norm_npy/valid')
+    parser.add_argument('--org_npy_path', default='~/Datasets/Brain_Tumor/BraTS2018/process_spacing1/norm_npy/valid')
+    parser.add_argument('--org_nii_path', default='~/Datasets/Brain_Tumor/BraTS2018/process_spacing1/resampled_nii/valid')
+    parser.add_argument('--save_npy_path', default='~/Datasets/Brain_Tumor/BraTS2018/process_spacing1_crop_112_160_112/norm_npy/valid')
+    parser.add_argument('--save_nii_path', default='~/Datasets/Brain_Tumor/BraTS2018/process_spacing1_crop_112_160_112/resampled_nii/valid')
 
     # Model settings
     parser.add_argument('--inplanes', default=4, help='The number of modality data input')
     parser.add_argument('--planes', default=32)
     parser.add_argument('--num_classes', default=1)
-    parser.add_argument('--resume', default='/data2/aiteam_cta/ZhaoBJ/Projects/Brain_Tumor_Segmentation/demos/BraTS2018_WholeTumor_Crop/results/SegNet3D/weights_500.pth')
+    parser.add_argument('--resume', default='~/Projects/Brain_Tumor_Segmentation/demos/BraTS2018_WholeTumor_Crop/results/SegNet3D/weights_500.pth')
 
     args = parser.parse_args()
     return args
