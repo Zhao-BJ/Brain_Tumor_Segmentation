@@ -31,9 +31,9 @@ def get_arguments():
     parser.add_argument('--epoch_num', default=500)
 
     # Data settings
-    parser.add_argument('--data_path', default='/data2/aiteam_cta/ZhaoBJ/Datasets/Brain_Tumor/BraTS2018/process_spacing1_crop_112_160_112/norm_npy/train')
+    parser.add_argument('--data_path', default='~/Datasets/Brain_Tumor/BraTS2018/process_spacing1_crop_112_160_112/norm_npy/train')
     parser.add_argument('--cross_validation_index', default=[1, 5], help='Split original dataset to train set and valid set')
-    parser.add_argument('--save_path', default='/data2/aiteam_cta/ZhaoBJ/Projects/Brain_Tumor_Segmentation/demos/BraTS2018_Cropped_by_SegNet3D_Cross_Validation/results/SegNet3D_1_5')
+    parser.add_argument('--save_path', default='~/Projects/Brain_Tumor_Segmentation/demos/BraTS2018_Cropped_by_SegNet3D_Cross_Validation/results/SegNet3D_1_5')
 
     # Model settings
     parser.add_argument('--inplanes', default=4, help='Four modality data input stack')
