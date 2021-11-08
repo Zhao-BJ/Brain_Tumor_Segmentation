@@ -31,8 +31,8 @@ def get_arguments():
     parser.add_argument('--epoch_num', default=500)
 
     # Data settings
-    parser.add_argument('--data_path', default='/data2/aiteam_cta/ZhaoBJ/Datasets/Brain_Tumor/BraTS2018/process_spacing1/norm_npy/train')
-    parser.add_argument('--save_path', default='/data2/aiteam_cta/ZhaoBJ/Projects/Brain_Tumor_Segmentation/demos/BraTS2018_WholeTumor_Crop/results/SegNet3D')
+    parser.add_argument('--data_path', default='~/Datasets/Brain_Tumor/BraTS2018/process_spacing1/norm_npy/train')
+    parser.add_argument('--save_path', default='~/Projects/Brain_Tumor_Segmentation/demos/BraTS2018_WholeTumor_Crop/results/SegNet3D')
 
     # Model settings
     parser.add_argument('--inplanes', default=4, help='The number of modality data input')
